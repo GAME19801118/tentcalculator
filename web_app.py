@@ -372,7 +372,7 @@ def main():
     rows.append(create_row(t['sec_cover'], 'roof_stretcher', res['roof_stretcher'], t['unit_pcs'], 'desc_roof_stretcher'))
 
     df = pd.DataFrame(rows)
-    st.dataframe(df, use_container_width=True, hide_index=True)
+    st.table(df)
 
     # --- 3. Visualization ---
     st.subheader(t['visualization'])
